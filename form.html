@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="forms.css"screen>
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Cadastro de Pet</title>
+    </head>
+
+    <body>  
+        
+      
+            
+        
+    
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="titulo">Cadastro de Pet</h1>
+            <p id="subtitulo">Complete  as Informações do seu Pet</p>
+            <br>
+        </div>
+
+        <!-- Início do formulário -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome do Pet</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="sobrenome"><strong>Nome do Dono(ª)</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+
+            <!-- Campo de email com-->
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+            <div class="campo">
+                <label><strong>Qual sintomas são os sintomas?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked> Vomito
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend"> Diarreia
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack"> Falta de apetite
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack"> Outros a detalhar
+                </label>
+            </div>
+
+            <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+            <div class="campo">
+                <label for="senioridade"><strong>SELECIONE O PORTE</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Pequeno</option>
+                  <option>Médio</option>
+                  <option>Grande</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <div id="check">
+                    <label><strong>Selecione as vacinas já tomadas:</strong></label><br><br>
+                    <input type="checkbox" id="vacina1" name="vacina1" value="v1">
+                    <label for="vacina1"> Antirrábica</label>
+                    <input type="checkbox" id="vacina2" name="vacina2" value="v2">
+                    <label for="vacina2"> Vacina contra Leishmaniose</label>
+                    <input type="checkbox" id="vacina3" name="vacina3" value="v3">
+                    <label for="vacina3"> Vacina contra giárdia</label>
+                    <input type="checkbox" id="vacina4" name="vacina4" value="v4">
+                    <label for="vacina4">  Vacina contra Gripe</label>
+                    <input type="checkbox" id="vacina5" name="vacina5" value="v5">
+                    <label for="vacina5"> V8 (óctupla)</label>
+                    <input type="checkbox" id="vacina6" name="vacina6" value="v6">
+                    <label for="vacina6"> V10 (déctupla)</label>
+                    <input type="checkbox" id="vacina7" name="vacina7" value="v7">
+                    <label for="vacina7"> Outras</label>
+                </div>
+            </fieldset>
+
+            <!-- Caixa de texto -->
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Conte um pouco mais sobre seu Pet incluido idade : </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            <!-- Botão para enviar o formulário -->
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+    </body>
+
+</html>
